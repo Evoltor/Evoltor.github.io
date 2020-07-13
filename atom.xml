@@ -1,22 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Evoltor.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-07-03T15:10:22.487Z</updated>
+    <title>Live Alone</title>
+    <updated>2020-07-13T13:46:52.727Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Evoltor.github.io"/>
     <link rel="self" href="https://Evoltor.github.io/atom.xml"/>
-    <subtitle>0 and 1</subtitle>
+    <subtitle>程序猿那些事</subtitle>
     <logo>https://Evoltor.github.io/images/avatar.png</logo>
     <icon>https://Evoltor.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, Live Alone</rights>
     <entry>
-        <title type="html"><![CDATA[hello world]]></title>
-        <id>https://Evoltor.github.io/post/hello-world/</id>
-        <link href="https://Evoltor.github.io/post/hello-world/">
+        <title type="html"><![CDATA[JAVA基础(一)——变量、基本数据类型]]></title>
+        <id>https://Evoltor.github.io/post/java-ji-chu-yi-bian-liang-ji-ben-lei-xing/</id>
+        <link href="https://Evoltor.github.io/post/java-ji-chu-yi-bian-liang-ji-ben-lei-xing/">
         </link>
-        <updated>2020-07-03T15:01:46.000Z</updated>
-        <content type="html"><![CDATA[<p>万事俱备，只欠东风</p>
+        <updated>2020-07-12T13:46:58.000Z</updated>
+        <content type="html"><![CDATA[<p>一、变量</p>
+<pre><code>1、定义
+  变量表示存储单元地址的名字。程序运行期间产生的数据被存放在内存单元中，内存单元的内容需要通过寻址获得，而内存单元的地址并不容易记忆，于是引入变量来与内存单元的地址一一对应。
+    
+2、变量命名规则
+  ①必须以字母(a~z和A~Z)、下划线(_)、货币符号($、￥)开始，后面可以使用数字(0~9)
+  ②不能使用除字母、下划线、货币、数字之外的其他符号
+  ③不能与java中关键字同名
+  ④同一作用域下该变量名只能有一个
+  ⑤严格区分大小写
+    
+3、声明变量
+  数据类型  变量名1，……，变量名n；
+  例：int a;或者 int b,c,d;
+
+4、初始化
+  可以在声明的同时初始化，也可以先声明，后初始化。
+  例：int a=1;
+      或
+      int a;
+      a=1;
+5、注意
+  ① java中变量在使用前必须初始化。
+  ②在对变量值进行存取或其他一些操作时，需要注意变量名与类型的匹配。
+</code></pre>
+<p>二、基本数据类型</p>
+<pre><code>1、知识点
+  基本数据类型包括：整型(默认int)、浮点型(默认double)、字符型(char)、布尔型(boolean)。
+  其中，整形包括byte、short、int、long。整数在计算时要注意溢出，如果int型范围不够，可以使用long型，在数字末尾添加L或l即可。
+  byte型变量占1个字节，short型变量占2个字节，int型变量占4个字节，long型变量占8个字节。
+  浮点型包括float(单精度浮点型)、double(双精度浮点型)。double型数据在进行运算时会出现舍入误差(四舍五入)。如果要用float，应在数字末尾添加f。
+  float型变量占4个字节，double型变量占8个字节。
+  char型变量占2个字节，boolean型占1个字节。
+
+2、数据类型之间转换
+  在不损失数字精度的情况下，数值运算会自动转换数据类型。在损失数字精度时，必须进行         强制类型转换。
+  强制类型转换包括：int→float，long→float,long→double
+  强制转换格式：目标类型  变量名=(目标类型)  变量名
+  例：double a = 10.24;
+      long b = (long) a;//10
+</code></pre>
 ]]></content>
     </entry>
     <entry>
