@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>JAVA基础(一)——变量、基本数据类型 | Live Alone</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Evoltor.github.io/favicon.ico?v=1594696740743">
+<link rel="stylesheet" href="https://Evoltor.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="一、变量
+1、定义
+变量表示存储单元地址的名字。程序运行期间产生的数据被存放在内存单元中，内存单元的内容需要通过寻址获得，而内存单元的地址并不容易记忆，于是引入变量来与内存单元的地址一一对应。
+2、变量命名规则
+①必须以字母(az和AZ)、..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Evoltor.github.io">
+        <img src="https://Evoltor.github.io/images/avatar.png?v=1594696740743" class="site-logo">
+        <h1 class="site-title">Live Alone</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      程序猿那些事
+    </div>
+    <div class="site-footer">
+      Beautiful <a href="https://github.com/getgridea/gridea" target="_blank">Logical</a> | <a class="rss" href="https://Evoltor.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">JAVA基础(一)——变量、基本数据类型</h2>
+            <div class="post-date">2020-07-12</div>
+            
+            <div class="post-content" v-pre>
+              <p>一、变量</p>
+<p>1、定义<br>
+变量表示存储单元地址的名字。程序运行期间产生的数据被存放在内存单元中，内存单元的内容需要通过寻址获得，而内存单元的地址并不容易记忆，于是引入变量来与内存单元的地址一一对应。</p>
+<p>2、变量命名规则<br>
+①必须以字母(a<sub>z和A</sub>Z)、下划线(_)、货币符号($、￥)开始，后面可以使用数字(0~9)<br>
+②不能使用除字母、下划线、货币、数字之外的其他符号<br>
+③不能与java中关键字同名<br>
+④同一作用域下该变量名只能有一个<br>
+⑤严格区分大小写</p>
+<p>3、声明变量<br>
+数据类型  变量名1，……，变量名n；以下为示例：<br>
+<code>int a;</code><br>
+<code>int b,c,d;</code></p>
+<p>4、初始化<br>
+可以在声明的同时初始化，也可以先声明，后初始化。以下为示例：<br>
+<code>int a=1;//声明的同时初始化</code><br>
+<code>int b;</code><br>
+<code>b=1;//先声明，后初始化</code><br>
+5、注意<br>
+① java中变量在使用前必须初始化。<br>
+②在对变量值进行存取或其他一些操作时，需要注意变量名与类型的匹配。</p>
+<p>二、基本数据类型</p>
+<p>1、知识点<br>
+基本数据类型包括：整型(默认int)、浮点型(默认double)、字符型(char)、布尔型(boolean)。<br>
+其中，整形包括byte、short、int、long。整数在计算时要注意溢出，如果int型范围不够，可以使用long型，在数字末尾添加L或l即可。<br>
+byte型变量占1个字节，short型变量占2个字节，int型变量占4个字节，long型变量占8个字节。<br>
+浮点型包括float(单精度浮点型)、double(双精度浮点型)。double型数据在进行运算时会出现舍入误差(四舍五入)。如果要用float，应在数字末尾添加f。<br>
+float型变量占4个字节，double型变量占8个字节。<br>
+char型变量占2个字节，boolean型占1个字节。</p>
+<p>2、数据类型之间转换<br>
+在不损失数字精度的情况下，数值运算会自动转换数据类型。在损失数字精度时，必须进行            强制类型转换。<br>
+强制类型转换包括：int→float，long→float,long→double<br>
+强制转换格式：目标类型  变量名=(目标类型)  变量名；以下为示例：<br>
+<code>double a = 10.24;</code><br>
+<code>long b = (long) a;//10</code></p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Evoltor.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
