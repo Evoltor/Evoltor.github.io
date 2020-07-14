@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Evoltor.github.io</id>
     <title>Live Alone</title>
-    <updated>2020-07-14T03:19:11.157Z</updated>
+    <updated>2020-07-14T03:30:14.966Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Evoltor.github.io"/>
     <link rel="self" href="https://Evoltor.github.io/atom.xml"/>
@@ -26,15 +26,17 @@
 ④同一作用域下该变量名只能有一个<br>
 ⑤严格区分大小写</p>
 <p>3、声明变量<br>
-数据类型  变量名1，……，变量名n；以下为示例：<br>
-<code>int a;</code><br>
-<code>int b,c,d;</code></p>
+数据类型  变量名1，……，变量名n；以下为示例：</p>
+<pre><code>    int a;
+    int b,c,d;
+</code></pre>
 <p>4、初始化<br>
-可以在声明的同时初始化，也可以先声明，后初始化。以下为示例：<br>
-<code>int a=1;//声明的同时初始化</code><br>
-<code>int b;</code><br>
-<code>b=1;//先声明，后初始化</code><br>
-5、注意<br>
+可以在声明的同时初始化，也可以先声明，后初始化。以下为示例：</p>
+<pre><code>    int a=1;//声明的同时初始化`
+    int b;
+    b=1;//先声明，后初始化
+</code></pre>
+<p>5、注意<br>
 ① java中变量在使用前必须初始化。<br>
 ②在对变量值进行存取或其他一些操作时，需要注意变量名与类型的匹配。</p>
 <p>二、基本数据类型</p>
@@ -48,9 +50,10 @@ char型变量占2个字节，boolean型占1个字节。</p>
 <p>2、数据类型之间转换<br>
 在不损失数字精度的情况下，数值运算会自动转换数据类型。在损失数字精度时，必须进行            强制类型转换。<br>
 强制类型转换包括：int→float，long→float,long→double<br>
-强制转换格式：目标类型  变量名=(目标类型)  变量名；以下为示例：<br>
-<code>double a = 10.24;</code><br>
-<code>long b = (long) a;//10</code></p>
+强制转换格式：目标类型  变量名=(目标类型)  变量名；以下为示例：</p>
+<pre><code>    double a = 10.24;
+    long b = (long) a;//10
+</code></pre>
 ]]></content>
     </entry>
     <entry>
